@@ -7,9 +7,9 @@ int main() {
 	cin>>n;
 	
 	while(n){
-		n%10;
-		count++;
 		n/=10;
+		count++;
+
 //		cout<<"n="<<n<<"\t"<<"count="<<count<<"\n";
 	}
 	
