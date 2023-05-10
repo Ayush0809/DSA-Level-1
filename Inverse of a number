@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	long long int n, inverse=0, count=1;
+	
+	cin>>n;
+	
+	while(n){
+		cout<<"n%10="<<n%10<<"\t"<<"power="<<count*pow(10,((n%10)-1))<<"\t";
+		inverse+= count*pow(10,((n%10)-1));
+		cout<<"inverse="<<inverse<<"\n";
+		count++;
+		n/=10;
+	}
+	
+	cout<<inverse<<"\n";
+	
+	return 0;
+}
